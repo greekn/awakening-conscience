@@ -18,6 +18,8 @@ win8.she 皮肤
 
 说明： 配置文件里面需要添加fofa账号和key
 
+2018/10/6
+
 ![image](https://github.com/greekn/awakening-conscience/blob/master/fofa/1.png)
 
-2018/10/6
+
