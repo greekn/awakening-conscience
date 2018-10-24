@@ -2,6 +2,6 @@
 
 Usage: [*] Usage :
 
-portmonitor.py -H <target host>
+portmonitor.py -H 127.0.0.1
   
   
