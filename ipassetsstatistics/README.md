@@ -18,4 +18,6 @@ win10.she 皮肤文件
 
 问题反馈QQ交流群176418830
 
+image[https://github.com/greekn/awakening-conscience/blob/master/ipassetsstatistics/1.png]
+
 
