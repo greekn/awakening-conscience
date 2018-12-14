@@ -1,25 +1,12 @@
 MD5,F32AA505C533E7321C80A7BA9EE11FAB
 SHA1,8A68A1F51218C706FD32D5D5CA37B2466F4C678B
 File Description,国内IP地址资产统计
-File Version,1.0.0.0
-Creation time,13:12:2018 - 08:11:38
-Access time,13:12:2018 - 08:11:38
-Modification Time,13:12:2018 - 08:10:45
-CPU,32-bit
-Size (bytes),51712
-Type,Executable
-SubSystem,Windows GUI
+
 
 MD5,285BE44EBCAA0A24DD8B028CA24DDDF2
 SHA1,9FF19B518CDDB5E103AFAE97D6CC5E1F56884FD5
 File Description,SkinSharp GUI 破解版
-File Version,1, 0, 6, 6
-Creation time,13:12:2018 - 07:11:03
-Access time,13:12:2018 - 07:11:03
-Modification Time,07:04:2018 - 22:51:05
-CPU,32-bit
-Size (bytes),88576
-Type,System Image
+
 SubSystem,Windows GUI
 
 config.ini ip查询api调用网站http://www.mob.com/
